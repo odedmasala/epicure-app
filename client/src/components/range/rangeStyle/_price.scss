@@ -1,0 +1,118 @@
+.slider-range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+  .slider-title {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 1.92px;
+      margin-bottom: 12px;
+    }
+    .range-price {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      p {
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1.97px;
+      }
+      .icon {
+        width: 10px;
+      }
+    }
+  }
+  .slider-container {
+    width: 309px;
+    height: 56px;
+    background: #f9f4ea;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .slider {
+      height: 0px;
+      border: 4px solid rgba(151, 151, 151, 0.5);
+      border-radius: 2px;
+      width: 233px;
+      background-color: rgb(180, 169, 169);
+      border-radius: 5px;
+      margin-top: 10px;
+      .track-style-0 {
+        top: -4px;
+        margin-right: 10px;
+        margin-left: -4px;
+        border: 4px solid rgb(234, 220, 220);
+        border-radius: 2px;
+      }
+
+      .track-style-2 {
+        top: -4px;
+        margin-right: -4px;
+        margin-left: 12px;
+        border: 4px solid rgb(234, 220, 220);
+        border-radius: 2px;
+      }
+      .thumb {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: black;
+      }
+      .thumb-style {
+        background-color: black;
+        border-radius: 50%;
+        width: 23px;
+        height: 23px;
+        margin-top: -10px;
+        outline: none;
+
+        .text-thumb {
+          width: 35.32px;
+          height: 11px;
+          position: relative;
+          bottom: 20px;
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 1.97px;
+        }
+      }
+      .thumb-style-0 {
+        border: none;
+        margin-left: -5px;
+      }
+      .thumb-style-1 {
+        margin-left: 10px;
+      }
+      .shekel-icon {
+        position: absolute;
+        width: 10.32px;
+        height: 10.17px;
+        left: -13px;
+      }
+    }
+    .left-thumb {
+      .thumb-style-0 {
+        background: #de9200;
+      }
+    }
+    .right-thumb {
+      .thumb-style-1 {
+        background: #de9200;
+      }
+    }
+  }
+}
