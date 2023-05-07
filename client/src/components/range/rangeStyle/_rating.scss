@@ -1,0 +1,25 @@
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  .rating-title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom:20px ;
+  }
+  .check-star-range {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 21px;
+    .star-list {
+      display: flex;
+      gap:4px;
+    }
+  }
+  .clear-btn{
+    font-size: 10px;
+    
+  }
+}

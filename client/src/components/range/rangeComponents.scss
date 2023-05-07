@@ -1,0 +1,7 @@
+@import "./rangeStyle/distance","./rangeStyle/price","./rangeStyle/rating";
+
+.range-container{
+display: flex;
+flex-direction: column;
+width: 353px;
+}

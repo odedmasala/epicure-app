@@ -1,0 +1,39 @@
+@import "../../assets/styles/mixin/media-queries",
+  "../../assets/styles/variable";
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid $border-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include desktop() {
+    padding: 0px;
+  }
+  .footer-container {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include desktop() {
+      flex-direction: row;
+      height: 84px;
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      width: 150px;
+      text-decoration: none;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries",
+  "../../assets/styles/mixin/typography-mixin";
+
+.card-dish-container {
+  padding: 0px;
+  background-color: $secondary-beige;
+  width: 245px;
+  height: 388px;
+  @include desktop() {
+    width: 380px;
+    height: 654px;
+  }
+  .card-image-container {
+    img {
+      width: 245px;
+      height: 152px;
+      @include desktop() {
+        width: 380px;
+        height: 306px;
+      }
+    }
+  }
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px 0px 16px;
+
+    @include desktop() {
+      width: 380px;
+      height: 348px;
+      padding: 0px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px;
+      padding-top: 24px;
+    }
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include desktop() {
+        align-items: center;
+        gap: 9px;
+      }
+      .card-title {
+        @include desktop() {
+          order: 1;
+          h3 {
+          }
+        }
+      }
+      .card-description {
+        width: 209px;
+        height: 100px;
+        @include desktop() {
+          text-align: center;
+          order: 3;
+          width: 295px;
+        }
+      }
+      .card-category {
+        margin-top: 16px;
+        grid-column: span 1;
+        margin-bottom: 16px;
+
+        width: 30px;
+        height: 24px;
+        @include desktop() {
+          order: 2;
+          width: 40px;
+          height: 31px;
+          margin: 0px;
+        }
+      }
+    }
+
+    .price-container {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: flex-start;
+      @include desktop() {
+        margin-bottom: 7px;
+        align-items: center;
+        p {
+          text-align: end;
+        }
+      }
+      .price-line {
+        display: none;
+        @include desktop() {
+          display: block;
+          border: 0.5px solid $primary-light;
+          width: 112px;
+          height: 0px;
+        }
+      }
+      .shekel-logo {
+        height: 10px;
+        width: 10px;
+        @include desktop() {
+          width: 12px;
+          height: 21px;
+        }
+      }
+    }
+  }
+}
+
+.dish-page-card {
+  width: 335px;
+  height: 375.84px;
+  cursor: pointer;
+  @include desktop() {
+    width: 272px;
+    height: 413px;
+  }
+  .card-image-container {
+    img {
+      width: 335px;
+      height: 212px;
+      @include desktop() {
+        width: 272px;
+        height: 172.73px;
+      }
+    }
+  }
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-top: 10px;
+    gap: 8px;
+    @include desktop() {
+      width: 272px;
+      height: 211.27px;
+      padding: 0px;
+      margin-top: 24px;
+      align-items: center;
+      justify-content: start;
+    }
+    .card-text {
+      gap: 8px;
+      .card-title {
+        h3 {
+          font-weight: 700;
+          @include desktop() {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 26px;
+          }
+        }
+      }
+
+      .card-description {
+        width: 303px;
+        height: 75px;
+        @include desktop() {
+          width: 222px;
+          height: 137.29px;
+        }
+        p {
+          line-height: 20px;
+          @include desktop() {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .price-container {
+      margin: 0px;
+      p {
+        @include mobile-title-h3;
+        @include desktop() {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          text-align: center;
+          letter-spacing: 1.97px;
+        }
+      }
+      .shekel-logo {
+        margin-top: 5px;
+      }
+      .price-card-line-1 {
+        display: none;
+        @include desktop() {
+          display: block;
+          border: 0.5px solid $primary-light;
+          height: 0px;
+          width: 82.5px;
+        }
+      }
+      .price-card-line-2 {
+        margin-left: 4px;
+        border: 0.5px solid $primary-light;
+        width: 256px;
+        height: 0px;
+        @include desktop() {
+          width: 82.5px;
+        }
+      }
+    }
+  }
+}

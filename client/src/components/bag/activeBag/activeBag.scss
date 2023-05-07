@@ -1,0 +1,119 @@
+@import "../../../assets/styles/animation",
+  "../../../assets/styles/mixin/display-mixin",
+  "../../../assets/styles/variable",
+  "../../../assets/styles/mixin/media-queries";
+
+.active-bag-container {
+  position: relative;
+  @include flex-container(column, start, center);
+  background-color: white;
+
+  @include desktop() {
+    width: 497px;
+    height: 778px;
+  }
+  .bag-title {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  .rest-title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .bag-item-list-container {
+    @include flex-container(column, center, center, 20px);
+    margin-bottom: 90px;
+    @include desktop() {
+      margin-bottom: 25px;
+      padding-top: 50px;
+      width: 342px;
+      height: 320px;
+      overflow: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      direction: rtl;
+    }
+    
+  }
+  .top-comment-line {
+    width: 136px;
+    height: 0px;
+    border: 0.5px solid $primary-light;
+    margin-bottom: 25px;
+  }
+  .bag-comment-container {
+    .comment-title {
+      @include flex-container(column, center, center);
+      margin-bottom: 38px;
+      h1 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+    .comment-input {
+      margin-bottom: 35px;
+      textarea {
+        width: 358px;
+        height: 122px;
+        font-family: "Helvetica Neue";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 15px;
+        resize: none;
+        outline: none;
+      }
+    }
+  }
+  .total-bag-price-container {
+    @include flex-container(row, center, center, 10px);
+    margin-bottom: 20px;
+    h2 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 18px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 18px;
+    }
+  }
+  .checkout-bag-btn {
+    margin-bottom: 24px;
+  }
+  .icon {
+    width: 10px;
+    height: 17px;
+  }
+}
+
+.checkout-bag-btn {
+  @include desktop() {
+    @include flex-container(column, flex-start, center, 9px);
+    margin-bottom: 37px;
+  }
+  .btn-checkout-total {
+    @include desktop() {
+      @include flex-container(row, flex-start, center, 4px);
+      display: flex;
+      margin-left: 30px;
+      align-items: flex-end;
+    }
+    .icon {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+.user-not-log-massage{
+  p{
+    color: red;
+    font-size: 16px;
+  }
+}

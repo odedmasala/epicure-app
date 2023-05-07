@@ -1,0 +1,36 @@
+.price-distance-range {
+    display: flex;
+    flex-direction: column;
+  
+    .price-range,
+    .distance-range {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      label {
+        margin-right: 1rem;
+      }
+  
+      input {
+        width: 5rem;
+      }
+  
+      .line-content {
+        position: absolute;
+        height: 2px;
+        background-color: #4caf50;
+        margin-top: 1.5rem;
+      }
+    }
+  
+    .price-range .line-content {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .distance-range .line-content {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }

@@ -1,0 +1,112 @@
+@import "../../assets/styles/mixin/media-queries",
+  "../../assets/styles/variable", "../../assets/styles/mixin/typography-mixin";
+.restaurants-section {
+  padding-top: 47px;
+  padding-left: 18px;
+  @include desktop() {
+    padding-left: 0px;
+  }
+  .restaurants-title {
+    margin-top: 14px;
+    margin-bottom: 24px;
+    display: block;
+    @include desktop() {
+      display: none;
+    }
+  }
+  .filter-restaurant {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    @include tablet() {
+      justify-content: center;
+    }
+    @include desktop() {
+      justify-content: center;
+      gap: 40px;
+    }
+    .map-view {
+      display: none;
+      @include tablet() {
+        display: block;
+      }
+      @include desktop() {
+        display: block;
+        p {
+          font-size: 18px;
+          cursor: not-allowed;
+        }
+      }
+    }
+    .category {
+      cursor: pointer;
+      p {
+        font-size: 18px;
+      }
+    }
+    .selected {
+      p {
+        @include mobile-title-h3();
+        letter-spacing: 1.92px;
+        border-bottom: 2px solid $secondary-yellow;
+        @include desktop() {
+          border: none;
+        }
+      }
+    }
+  }
+  .range-filter-restaurant {
+    background-color: $secondary-gray;
+    margin-top: 40px;
+    list-style: none;
+    display: none;
+    justify-content: center;  
+    
+    @include desktop() {
+      display: flex;
+    }
+  }
+  .range-filter-restaurant {
+    cursor: pointer;
+    .selected{
+      background-color: $range-bottom;
+    }
+    .disable{
+      cursor: not-allowed;
+    }
+  } 
+  .restaurants-list {
+    margin-top: 37px;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    @include tablet() {
+      align-items: center;
+    }
+
+    @include desktop() {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+  .no-restaurants{
+    height: 60vh;
+    padding: 0px 127px 0px 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    h1{
+      font-size: 70px;
+    }
+    p{
+      font-size: 50px;
+    }
+  }
+}

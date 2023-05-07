@@ -1,0 +1,101 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries";
+
+.about-section {
+  background-color: $secondary-gray;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  @include desktop() {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 127px 0px 127px;
+  }
+  .about-logo-container {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    @include desktop() {
+      order: 2;
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 102px;
+      height: 95px;
+      @include desktop() {
+        width: 178.22px;
+        height: 166px;
+      }
+    }
+  }
+  .about-contact {
+    display: flex;
+    flex-direction: column;
+    @include desktop() {
+      order: 1;
+    }
+    .payment-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      gap: 16px;
+      @include desktop() {
+        order: 3;
+        flex-direction: row;
+        justify-content: start;
+        gap: 16px;
+      }
+      .paymentLogo {
+        width: 180px;
+        height: 52px;
+      }
+    }
+
+    .title-container {
+      margin-bottom: 16px;
+      @include desktop() {
+        order: 1;
+      }
+      h2 {
+        text-align: start;
+      }
+      @include desktop() {
+        h2 {
+          text-align: start;
+        }
+      }
+    }
+
+    .text-container {
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      @include desktop() {
+        order: 2;
+        gap: 40px;
+      }
+      :nth-child(1) {
+        text-align: left;
+        width: 331px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 2.14px;
+        @include desktop() {
+          width: 569px;
+        }
+      }
+      :nth-child(2) {
+        width: 306px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 2.14px;
+        @include desktop() {
+          width: 569px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../assets/styles/mixin/media-queries",
+  "../../assets/styles/mixin/typography-mixin";
+
+.chef-section {
+  margin-top: 46px;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include desktop() {
+    padding: 0;
+    margin-top: 0;
+  }
+  .chef-title {
+    padding-top: 14px;
+    @include desktop() {
+      display: none;
+    }
+  }
+  .chef-category {
+    @include desktop() {
+    }
+
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    gap: 21px;
+    @include desktop() {
+      justify-content: center;
+      gap: 40px;
+    }
+    .category {
+      cursor: pointer;
+      p {
+        @include desktop() {
+          @include desk-body-text();
+          font-size: 18px;
+        }
+      }
+    }
+    .selected {
+      p {
+        @include mobile-title-h3();
+        @include desktop() {
+          @include desk-body-text();
+          font-size: 18px;
+        }
+      }
+      border-bottom: 2px solid $secondary-yellow;
+    }
+  }
+  .chef-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    gap: 23px;
+    @include desktop() {
+      margin-top: 40px;
+      gap: 24px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+  }
+}

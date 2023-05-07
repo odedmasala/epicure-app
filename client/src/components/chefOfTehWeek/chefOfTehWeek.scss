@@ -1,0 +1,92 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries";
+
+.chef-container {
+  .chef-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .chef-title {
+      margin-bottom: 16px;
+      width: 100%;
+      @include desktop() {
+        margin-bottom: 40px;
+      }
+    }
+    .chef-box {
+      display: flex;
+      flex-direction: column;
+      @include desktop() {
+        flex-direction: row;
+        gap: 64px;
+      }
+      .chef-description {
+        width: 335px;
+        text-align: justify;
+        line-height: 28px;
+        letter-spacing: 1.97px;
+        @include desktop() {
+          margin-top: 20px;
+          width: 642px;
+          height: 255px;
+          p {
+            font-size: 24px;
+            line-height: 35px;
+            text-align: justify;
+            letter-spacing: 1.25px;
+          }
+        }
+      }
+    }
+  }
+  .chef-week-title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    grid-column: 1 auto;
+    @include desktop() {
+      width: 100%;
+    }
+    .mobile-title {
+      @include desktop() {
+        display: none;
+      }
+    }
+    .desktop-title {
+      display: none;
+      @include desktop() {
+        display: block;
+        margin-left: 127px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .carousel {
+    padding-left: 20px;
+    @include desktop() {
+      display: none;
+    }
+  }
+  .desktop-cards {
+    display: none;
+    @include desktop() {
+      display: flex;
+      margin-left: 127px;
+      gap: 16px;
+    }
+  }
+  .link-to-restaurants {
+    padding-left: 20px;
+
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include desktop() {
+      display: none;
+    }
+    .arrow-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

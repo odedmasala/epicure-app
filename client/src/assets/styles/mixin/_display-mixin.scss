@@ -1,0 +1,21 @@
+@mixin grid-container($repat-col: 2, $row-temp: 0px, $gap-element: 0px) {
+  display: grid;
+  grid-template-columns: repeat($repat-col);
+  grid-template-rows: $row-temp;
+  grid-gap: $gap-element;
+}
+
+@mixin flex-container(
+  $flex-direction:"",
+  $justifyContent:"",
+  $alignItems:"",
+  $gap:"",
+  $width-in-percent:"",
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content:  $justifyContent;
+  align-items: $alignItems;
+  gap: $gap;
+  width:  $width-in-percent;
+}

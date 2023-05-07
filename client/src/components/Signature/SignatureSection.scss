@@ -1,0 +1,74 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries";
+.signature-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+  background-color: $secondary-gray;
+  @include desktop() {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 265px;
+    margin-bottom: 80px;
+  }
+  .mobile-title {
+    display: block;
+    @include desktop() {
+      display: none;
+    }
+  }
+  .desktop-title {
+    display: none;
+    @include desktop() {
+      display: block;
+    }
+  }
+  .icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    @include desktop() {
+      flex-direction: row;
+      gap: 40px;
+    }
+    .signature-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 33px;
+      @include desktop() {
+        width: 136px;
+        height: 127px;
+      }
+      p {
+        font-size: 18px;
+        @include desktop() {
+          font-size: 24px;
+        }
+      }
+
+      .Spicy-icon {
+        width: 46.42px;
+        height: 35.98px;
+        @include desktop() {
+          width: 77.42px;
+          height: 60px;
+        }
+      }
+      .Vegetarian-icon {
+        width: 77.42px;
+        height: 60px;
+      }
+      .Vegan-icon {
+        width: 77.42px;
+        height: 60px;
+      }
+    }
+  }
+}

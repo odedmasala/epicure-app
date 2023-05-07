@@ -1,0 +1,155 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries";
+
+.card-restaurant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: $secondary-beige;
+  width: 245px;
+  height: 232.8px;
+  @include desktop() {
+    align-items: center;
+    width: 379px;
+    height: 405px;
+  }
+  .star-rating {
+    display: none;
+    @include desktop() {
+      display: flex;
+      margin-top: 8px;
+    }
+  }
+  .card-image-container {
+    img {
+      height: 151.8px;
+      width: 245px;
+      @include desktop() {
+        width: 379px;
+        height: 236px;
+      }
+    }
+  }
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-top: 10px;
+    gap: 8px;
+    @include desktop() {
+      padding-left: 0px;
+      padding-top: 18px;
+      align-items: center;
+    }
+  }
+}
+.card-restaurant-page-container {
+  width: 335px;
+  height: 290.38px;
+  .card-image-container {
+    img {
+      width: 335px;
+      height: 209.38px;
+      @include desktop() {
+        width: 335px;
+        height: 209.38px;
+      }
+    }
+  }
+}
+.card-chef-week {
+  @include desktop() {
+    width: 231px;
+    height: 357px;
+  }
+  .card-image-container {
+    img {
+      height: 151.8px;
+      width: 245px;
+      @include desktop() {
+        width: 231px;
+        height: 224px;
+      }
+    }
+  }
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-top: 10px;
+    gap: 8px;
+    @include desktop() {
+      padding-left: 0px;
+      padding-top: 18px;
+      align-items: center;
+      h3 {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+.card-chef-container {
+  .chef-header {
+    height: 338px;
+    width: 335px;
+    @include desktop() {
+      width: 378px;
+    }
+    .chef-image {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 335px;
+      @include desktop() {
+        width: 378px;
+      }
+      height: 338px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .chef-name {
+      background-color: $secondary-gray;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .chef-of-the-week {
+    margin-bottom: 24px;
+    width: 335px;
+    height: 262px;
+    @include desktop() {
+      width: 478px;
+      height: 372px;
+      background-color: black;
+    }
+
+    .chef-image {
+      width: 335px;
+      height: 262px;
+      @include desktop() {
+        background-size: contain;
+
+        width: 478px;
+        height: 372px;
+      }
+    }
+    .chef-name {
+      @include desktop() {
+        width: 478px;
+        bottom: 80px;
+      }
+    }
+  }
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+}
