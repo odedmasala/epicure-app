@@ -2,6 +2,7 @@
   "name": "epicure-app",
   "private": true,
   "version": "0.0.0",
+   "repository": "https://github.com/odedmasala/epicure-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
