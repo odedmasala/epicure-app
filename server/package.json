@@ -2,7 +2,7 @@
   "name": "epicure-server",
   "version": "1.0.0",
   "main": "main.js",
-  "repository": "https://github.com/Oded-Masala-Moveo/Epicure-app",
+  "repository": "https://github.com/odedmasala/epicure-app",
   "author": "Oded Masala",
   "license": "MIT",
   "scripts": {
