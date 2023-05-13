@@ -1,0 +1,46 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/typography-mixin",
+  "../../assets/styles/mixin/media-queries";
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  border: 0.5px solid #000000;
+  border-radius: 4px;
+  @include desktop() {
+    width: 505px;
+    height: 48px;
+  }
+
+  .search-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    @include desktop() {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  input {
+    height: 30px;
+    width: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: start;
+    @include mobile-input-text();
+    font-size: 13px;
+    @include desktop() {
+      font-size: 24px;
+    }
+  }
+}
+
+.input-nav-container {
+  width: 315px;
+  input {
+    font-size: 12px;
+  }
+}

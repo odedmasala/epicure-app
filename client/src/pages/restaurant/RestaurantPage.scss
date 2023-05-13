@@ -1,0 +1,150 @@
+@import "../../assets/styles/mixin/media-queries",
+  "../../assets/styles/mixin/typography-mixin";
+
+.restaurant-image-container {
+  padding-top: 47px;
+  @include tablet() {
+    padding: 0px;
+    margin: 0px 127px 0px 127px;
+  }
+  @include desktop() {
+    padding: 0px;
+    margin: 0px 127px 0px 127px;
+  }
+  .restaurant-image {
+    height: 272px;
+    width: 100%;
+    @include tablet() {
+      height: 425px;
+    }
+    @include desktop() {
+      height: 425px;
+    }
+  }
+}
+.restaurant-section {
+  padding-left: 18px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  @include tablet() {
+    margin: 24px 127px 0px 127px;
+  }
+  @include desktop() {
+    margin: 24px 127px 0px 127px;
+  }
+  .restaurant-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet() {
+      align-items: center;
+    }
+    @include desktop() {
+      align-items: center;
+    }
+    h3 {
+      @include tablet() {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 3.67px;
+      }
+      @include desktop() {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 3.67px;
+      }
+    }
+    p {
+      @include tablet() {
+        font-size: 32px;
+        line-height: 36px;
+      }
+      @include desktop() {
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+  }
+  .open-container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include tablet() {
+      justify-content: center;
+      margin-top: 32px;
+    }
+    @include desktop() {
+      justify-content: center;
+      margin-top: 32px;
+    }
+    p {
+      @include tablet() {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      @include desktop() {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    .clock-icon {
+      width: 17px;
+      height: 18px;
+    }
+  }
+  .dish-category {
+    list-style: none;
+    display: flex;
+    gap: 21px;
+    margin-top: 33px;
+    padding-bottom: 8px;
+    @include tablet() {
+      justify-content: center;
+      margin-top: 32px;
+    }
+    @include desktop() {
+      justify-content: center;
+      margin-top: 48px;
+    }
+    .category {
+      cursor: pointer;
+      p {
+        font-size: 18px;
+
+        @include desktop() {
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: 1.92px;
+        }
+      }
+    }
+    .selected {
+      p {
+        @include mobile-title-h3();
+        border-bottom: 2px solid $secondary-yellow;
+        padding-bottom: 6px;
+        @include desktop() {
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: 1.92px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+  .dish-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 58px;
+    @include desktop() {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 32px;
+    }
+  }
+}

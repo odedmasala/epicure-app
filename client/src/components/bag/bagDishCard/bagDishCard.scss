@@ -1,0 +1,65 @@
+@import "../../../assets/styles/animation",
+  "../../../assets/styles/mixin/display-mixin", "../../../assets/styles/variable",
+  "../../../assets/styles/mixin/media-queries";
+
+
+.bag-dish-card-container {
+    @include flex-container(row, space-between, center);
+    direction: initial;
+    background-color: $secondary-beige;
+    width: 342px;
+    height: 96px;
+  
+    .bag-dish-card-image {
+      width: 96px;
+      height: 96px;
+      img {
+        width: 96px;
+        height: 96px;
+      }
+    }
+    .bag-dish-card-detail {
+      height: 100%;
+      @include flex-container(column, start, start, 8px);
+      margin-top: 12px;
+      .title {
+        @include flex-container(row, center, center, 5px);
+        p {
+          font-size: 12px;
+          line-height: 26px;
+          @include desktop() {
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+        h3 {
+          line-height: 26px;
+          @include desktop() {
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+      }
+      .side-change {
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+    .item-total-price {
+      height: 100%;
+      margin-right: 12px;
+      padding-bottom: 12px;
+      @include flex-container(row, center, end, 3px);
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    .icon {
+      width: 10px;
+      height: 17px;
+    }
+  }

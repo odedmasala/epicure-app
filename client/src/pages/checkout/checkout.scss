@@ -1,0 +1,128 @@
+@import "../../assets/styles/variable",
+  "../../assets/styles/mixin/display-mixin",
+  "../../assets/styles/mixin/media-queries";
+
+.checkout-mobile-navbar-container {
+  position: fixed;
+  width: 100%;
+  height: 46px;
+  @include flex-container(row, flex-start, center, 40%);
+  @include desktop() {
+    position: absolute;
+    max-width: 1440px;
+  }
+  background-color: $secondary-gray;
+  box-shadow: $box-shadow-setting;
+  padding-left: 20px;
+  .close-mobile-logo {
+    .logo {
+      width: 32.93px;
+      height: 32px;
+    }
+  }
+  .close-checkout-nav {
+    cursor: pointer;
+    .logo {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.checkout-page-container {
+  margin-top: 82px;
+  padding-left: 18px;
+  @include desktop() {
+    @include flex-container(row, center, "", 32px);
+  }
+  .checkout-form-container {
+    @include desktop() {
+      @include flex-container(column, "", center);
+      width: 408px;
+      height: 708px;
+      background: #ffffff;
+      box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
+    }
+    .checkout-title {
+      margin-bottom: 40px;
+      text-align: center;
+      h2 {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+  .order-details-container {
+    @include flex-container(column, flex-start, "", 20px);
+    @include desktop() {
+      @include flex-container(column, flex-start, center, 10px);
+      width: 497px;
+      height: 708px;
+      background: #ffffff;
+      box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
+    }
+    .top-comment-line {
+      width: 136px;
+      height: 0px;
+      border: 0.5px solid $primary-light;
+      margin-bottom: 25px;
+    }
+    .bag-comment-container {
+      .comment-title {
+        @include flex-container(column, center, center);
+        margin-bottom: 38px;
+        h1 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+      .comment-input {
+        margin-bottom: 35px;
+        @include desktop(){
+          margin: 0px;
+        }
+        textarea {
+          width: 358px;
+          height: 122px;
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 200;
+          font-size: 16px;
+          line-height: 15px;
+          resize: none;
+          outline: none;
+        }
+      }
+    }
+    .order-total-container {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      @include desktop(){
+        margin: 0px;
+      }
+      @include flex-container(column, center, center);
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    .submit-button-container {
+      @include desktop(){
+        margin-bottom: 0px;
+      }
+      margin-bottom: 40px;
+      .checkout-btn-title{
+        @include flex-container(row, center, center);
+        
+        .total-price-checkout {
+          margin-left: 180px;
+          @include flex-container(row, center, center,5px);
+          .shekel-checkout{
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+}

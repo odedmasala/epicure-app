@@ -1,0 +1,55 @@
+@import "../../assets/styles/animation",
+  "../../assets/styles/mixin/display-mixin", "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries";
+
+.nav-bag-container {
+  @include Appeared();
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  background-color: white;
+  z-index: 998;
+  @include flex-container(column, center, center);
+  @include desktop() {
+    top: 64px;
+    left: 1050px;
+  }
+}
+.nav-bag-container > * {
+  width: 380px;
+}
+.empty-bag-container {
+  position: relative;
+  background-color: white;
+  @include desktop() {
+    width: 497px;
+    height: 586px;
+  }
+  .top-empty-bag-container {
+    @include flex-container(column, center, center, 20px);
+    padding: 0px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    @include desktop() {
+      margin-top: 243px;
+      margin-bottom: 148px;
+    }
+    .bag-icon {
+      width: 55px;
+      height: 55px;
+    }
+
+    h2 {
+      font-size: 16px;
+      line-height: 20px;
+      width: 145px;
+      @include desktop() {
+        width: 121px;
+      }
+    }
+  }
+  .bottom-empty-bag-container {
+    @include flex-container(row, center, center);
+  }
+}

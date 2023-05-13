@@ -1,0 +1,14 @@
+@import "../../../assets/styles/mixin/display-mixin",
+  "../../../assets/styles/mixin/media-queries",
+  "../../../assets/styles/variable";
+
+
+  .auth-form-inputs-container{
+    @include flex-container(column, center, center,40px);
+
+    .forget-password-container{
+      p{
+        font-size: 14px;
+      }
+    }
+  }

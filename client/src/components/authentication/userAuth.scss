@@ -1,0 +1,115 @@
+@import "../../assets/styles/animation",
+  "../../assets/styles/mixin/display-mixin", "../../assets/styles/variable",
+  "../../assets/styles/mixin/media-queries";
+
+.user-nav-container {
+  @include Appeared();
+  position: absolute;
+  top: 46px;
+  left: 0px;
+  background-color: white;
+  z-index: 998;
+  @include flex-container(column, center, center);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include desktop() {
+    top: 64px;
+    left: 1050px;
+  }
+  .user-auth-container {
+    position: relative;
+    @include flex-container(column, start, center);
+    background-color: white;
+    width: 375px;
+    height: 590px;
+    @include desktop() {
+      width: 573px;
+      height: 626px;
+    }
+
+    .title-auth-container {
+      margin-top: 40px;
+    }
+    .sub-title-auth-container {
+      margin-top: 18px;
+    }
+    .auth-container {
+      margin-top: 40px;
+    }
+    .switch-form-bar {
+      margin-top: 40px;
+      @include flex-container(row, center, center,12px);
+      .line {
+        width: 126.5px;
+        height: 0px;
+
+        border: 0.5px solid $primary-light;
+      }
+    }
+    .switch-form-btn {
+      margin-top: 54px;
+    }
+  }
+}
+.user-logged-container{
+  @include Appeared();
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  background-color: white;
+  border: 1px solid $primary-light;
+  z-index: 995;
+  @include flex-container(column, space-between, center);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 380px;
+  height: 215px;
+ @include desktop() {
+  top: 1px;
+  left: 150px;
+  width: 350px;
+ }
+  .title-logged-container{
+    position: relative;
+    @include flex-container(column, start, center,15px);
+    background-color: white;
+ p{
+  text-align: center;
+ }
+  }
+  .image-container{
+    margin-top: 20px;
+    img{
+      width: 50px;
+    }
+  }
+  .logOut-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.popup-auth-container {
+  @include flex-container(column, center, center);
+  height: 100%;
+  .close-container {
+    width: 376px;
+    margin-bottom: 8px;
+    .x-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .popup-auth-close-container{
+    @include flex-container(column, center, flex-start);
+    width: 573px;
+    margin-bottom: 9px;
+    .close-icon{
+      width: 20px;
+      height: 20px;
+    }
+  
+  }
+}
