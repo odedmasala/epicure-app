@@ -1,0 +1,144 @@
+@import "../variable";
+
+@mixin font-style() {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+}
+/* MOBILE DEVICES */
+@mixin mobile-title-h1() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 1.97px;
+  color: $primary-dark;
+}
+@mixin mobile-title-h2() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: $primary-dark;
+}
+@mixin mobile-title-h3() {
+  @include font-style();
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 2.67px;
+  color: $primary-dark;
+}
+@mixin mobile-body-text() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.97px;
+  color: $primary-dark;
+}
+@mixin mobile-button-text() {
+  @include font-style();
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+  color: $secondary-gray;
+}
+@mixin mobile-input-text() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.97px;
+  color: $primary-dark;
+}
+@mixin mobile-label-text() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.97px;
+  color: $primary-light;
+}
+@mixin btn-text() {
+  @include font-style();
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+}
+
+/* DESKTOP DEVICES */
+@mixin desk-title-h1() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1.97px;
+  color: $primary-dark;
+}
+@mixin desk-title-h2() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: $primary-dark;
+}
+@mixin desk-title-h3() {
+  @include font-style();
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 2.67px;
+  color: $primary-dark;
+}
+@mixin desk-body-text() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.97px;
+  color: $primary-dark;
+}
+@mixin desk-button-text() {
+  @include font-style();
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+  color: $secondary-gray;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+@mixin desk-input-text() {
+  @include font-style();
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  color: $primary-dark;
+}
+@mixin desk-label-text() {
+  @include font-style();
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  color: $primary-light;
+}

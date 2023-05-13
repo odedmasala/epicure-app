@@ -1,0 +1,22 @@
+@keyframes example {
+  0% {
+    background-color: #ffffff96;
+  }
+
+  100% {
+    background-color: #ffffff;
+  }
+}
+@mixin Appeared() {
+  @keyframes example {
+    0% {
+      background-color: #ffffff96;
+    }
+
+    100% {
+      background-color: #ffffff;
+    }
+  }
+  animation-name: example;
+  animation-duration: 0.5s;
+}
