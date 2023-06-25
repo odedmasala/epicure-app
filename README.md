@@ -40,7 +40,6 @@ If any data fails the validation checks, the server responds with appropriate er
 ## Getting Started
 
 To get started with the Epicure App, follow these steps:
-https://github.com/odedmasala/epicure-app.git
 1. Clone the repository to your local machine using the command: `git clone https://github.com/odedmasala/epicure-app.git`.
 2. Navigate to the project directory.
 3. Install the dependencies for the client-side by running `npm install` in the client folder.
