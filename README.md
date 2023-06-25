@@ -40,17 +40,16 @@ If any data fails the validation checks, the server responds with appropriate er
 ## Getting Started
 
 To get started with the Epicure App, follow these steps:
-
-1. Clone the repository to your local machine using the command: `git clone https://github.com/your-username/epicure-app.git`.
+https://github.com/odedmasala/epicure-app.git
+1. Clone the repository to your local machine using the command: `git clone https://github.com/odedmasala/epicure-app.git`.
 2. Navigate to the project directory.
 3. Install the dependencies for the client-side by running `npm install` in the client folder.
 4. Install the dependencies for the server-side by running `npm install` in the server folder.
 5. Create a file named `.env` in the server folder and set the required environment variables mentioned in
 6. Make sure the environment variables are properly set in the `.env` file.
-7. Start the server by running `npm start` in the server folder.
-8. In a separate terminal, navigate to the client folder and run `npm start` to start the client-side development server.
-9. Access the Epicure App in your web browser at http://localhost:3000.
-
+7. Start the server by running `npm run dev` in the server folder.
+8. In a separate terminal, navigate to the client folder and run `npm run dev` to start the client-side development server.
+9. Access the Epicure App in your web browser at http://localhost:5173.
 Congratulations! You have successfully set up and started the Epicure App on your local machine. Feel free to explore different restaurants, view menus, and place orders for your favorite dishes.
 
 ## Contributing
