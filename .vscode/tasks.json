@@ -21,6 +21,56 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Docker: Start MongoDB",
+            "type": "shell",
+            "command": "docker-compose up -d mongodb",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Docker: Start Server",
+            "type": "shell",
+            "command": "docker-compose up -d server",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Docker: Start Client",
+            "type": "shell",
+            "command": "docker-compose up -d client",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Docker: Stop All Containers",
+            "type": "shell",
+            "command": "docker-compose down",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Docker: Rebuild and Start All",
+            "type": "shell",
+            "command": "docker-compose up --build -d",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 } 
