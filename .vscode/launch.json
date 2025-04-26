@@ -33,6 +33,14 @@
         {
             "name": "Full Stack",
             "configurations": ["Debug Server", "Debug Client"]
+        },
+        {
+            "name": "Docker: Start All",
+            "configurations": ["Docker: Start MongoDB", "Docker: Start Server", "Docker: Start Client"]
+        },
+        {
+            "name": "Docker: Stop All",
+            "configurations": ["Docker: Stop All Containers"]
         }
     ]
 } 
